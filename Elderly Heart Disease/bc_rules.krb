@@ -1,0 +1,263 @@
+#My forward chaining rules and relations
+
+shortness
+    foreach
+        questions.shortness_of_breath(True)
+    assert
+        symptoms.shortnessOfBreath(True)
+
+fatigue
+    foreach
+        questions.fatigue(True)
+    assert
+        symptoms.fatigue(True)
+
+chestPain
+    foreach
+        questions.chest_pain(True)
+    assert
+        symptoms.chestPain(True)
+
+
+no_major_symptoms
+    foreach
+        questions.shortness_of_breath(False)
+        questions.fatigue(False)
+        questions.chest_pain(False)
+    assert
+        symptoms.diagnosis("No heart disease symptoms detected!")
+        symptoms.inconclusive(False)
+
+LS_Heart_failure
+    foreach
+        symptoms.shortnessOfBreath(True)
+        questions.irregular_heartbeat(True)
+        questions.coughing(True)
+    assert
+        symptoms.diagnosis("Left sided heart failure")
+        symptoms.inconclusive(False)
+
+RS_Heart_failure
+    foreach
+        symptoms.shortnessOfBreath(True)
+        questions.irregular_heartbeat(True)
+        questions.leg_swelling(True)
+        questions.abdominal_swelling(True)
+        questions.weight_gain(True)
+    assert
+        symptoms.diagnosis("Right sided heart failure")
+        symptoms.inconclusive(False)
+
+RS_Heart_failure2
+    foreach
+        symptoms.shortnessOfBreath(True)
+        questions.irregular_heartbeat(True)
+        questions.abdominal_swelling(True)
+        questions.weight_gain(True)
+    assert
+        symptoms.diagnosis("Right sided heart failure")
+        symptoms.inconclusive(False)
+
+RS_Heart_failure3
+    foreach
+        symptoms.shortnessOfBreath(True)
+        questions.irregular_heartbeat(True)
+        questions.leg_swelling(True)
+        questions.weight_gain(True)
+    assert
+        symptoms.diagnosis("Right sided heart failure")
+        symptoms.inconclusive(False)
+
+RS_Heart_failure4
+    foreach
+        symptoms.shortnessOfBreath(True)
+        questions.irregular_heartbeat(True)
+        questions.leg_swelling(True)
+        questions.abdominal_swelling(True)
+    assert
+        symptoms.diagnosis("Right sided heart failure")
+        symptoms.inconclusive(False)
+
+RS_Heart_failure5
+    foreach
+        symptoms.shortnessOfBreath(True)
+        questions.irregular_heartbeat(True)
+        questions.abdominal_swelling(True)
+    assert
+        symptoms.diagnosis("Right sided heart failure")
+        symptoms.inconclusive(False)
+
+RS_Heart_failure6
+    foreach
+        symptoms.shortnessOfBreath(True)
+        questions.irregular_heartbeat(True)
+        questions.leg_swelling(True)
+    assert
+        symptoms.diagnosis("Right sided heart failure")
+        symptoms.inconclusive(False)
+
+coronary_artery
+    foreach
+        questions.chest_pain(True)
+        questions.heart_attack(True)
+        questions.cholesterol(True)
+        questions.Family_history(True)
+        questions.highBloodPressure(True)
+        questions.smoking(True)
+    assert
+        symptoms.diagnosis("Coronary artery disease")
+        symptoms.inconclusive(False)
+
+coronary_artery1
+    foreach
+        questions.chest_pain(True)
+        questions.cholesterol(True)
+        questions.Family_history(True)
+        questions.highBloodPressure(True)
+        questions.smoking(True)
+    assert
+        symptoms.diagnosis("Coronary artery disease")
+        symptoms.inconclusive(False)
+
+
+coronary_artery2
+    foreach
+        questions.chest_pain(True)
+        questions.heart_attack(True)
+        questions.cholesterol(True)
+    assert
+        symptoms.diagnosis("Coronary artery disease")
+        symptoms.inconclusive(False)
+
+coronary_artery3
+    foreach
+        questions.chest_pain(True)
+        questions.cholesterol(True)
+        questions.Family_history(True)
+    assert
+        symptoms.diagnosis("Coronary artery disease")
+        symptoms.inconclusive(False)
+
+coronary_artery4
+    foreach
+        questions.chest_pain(True)
+        questions.cholesterol(True)
+        questions.smoking(True)
+    assert
+        symptoms.diagnosis("Coronary artery disease")
+        symptoms.inconclusive(False)
+
+
+heart_attack
+    foreach
+        questions.chest_pain(True)
+        questions.upper_body(True)
+        questions.cold_sweat(True)
+        questions.indigestion(True)
+    assert
+        symptoms.diagnosis("Heart Infraction (Heart attack)")
+        symptoms.inconclusive(False)
+
+heart_attack2
+    foreach
+        questions.chest_pain(True)
+        questions.upper_body(True)
+        questions.cold_sweat(True)
+    assert
+        symptoms.diagnosis("Heart Infraction (Heart attack)")
+        symptoms.inconclusive(False)
+
+heart_attack3
+    foreach
+        questions.chest_pain(True)
+        questions.upper_body(True)
+        questions.indigestion(True)
+    assert
+        symptoms.diagnosis("Heart Infraction (Heart attack)")
+        symptoms.inconclusive(False)
+
+heart_attack4
+    foreach
+        questions.chest_pain(True)
+        questions.upper_body(True)
+    assert
+        symptoms.diagnosis("Heart Infraction (Heart attack)")
+        symptoms.inconclusive(False)
+
+tachycardia_arrhythmia
+    foreach
+        questions.fluttering(True)
+        questions.racing(True)
+        questions.anxiety(True)
+        questions.faint(True)
+    assert
+        symptoms.diagnosis("Tachycardia Arrhythmia")
+        symptoms.inconclusive(False)
+
+bradycardia_arrhythmia
+    foreach
+        questions.slow(True)
+        questions.dizzy(True)
+        questions.memory(True)
+        questions.faint(True)
+    assert
+        symptoms.diagnosis("Bradycardia Arrhythmia")
+        symptoms.inconclusive(False)
+
+heart_valve_disease_regurgitation
+    foreach
+        questions.heart_murmur(True)
+        questions.abdominal_swelling(True)
+        questions.leg_swelling(True)
+        questions.dizzy(True)
+        questions.faint(True)
+    assert
+        symptoms.diagnosis("Heart Valve Disease (valve regurgitation)")
+        symptoms.inconclusive(False)
+
+heart_valve_disease1
+    foreach
+        questions.heart_murmur(True)
+        questions.dizzy(True)
+        questions.faint(True)
+    assert
+        symptoms.diagnosis("Heart Valve Disease")
+        symptoms.inconclusive(False)
+
+heart_valve_disease2
+    foreach
+        questions.heart_murmur(True)
+        questions.dizzy(True)
+    assert
+        symptoms.diagnosis("Heart Valve Disease")
+        symptoms.inconclusive(False)
+
+
+heart_valve_disease3
+    foreach
+        questions.heart_murmur(True)
+        questions.faint(True)
+    assert
+        symptoms.diagnosis("Heart Valve Disease")
+        symptoms.inconclusive(False)
+
+heart_valve_disease4
+    foreach
+        questions.heart_murmur(True)
+    assert
+        symptoms.diagnosis("Heart Valve Disease")
+        symptoms.inconclusive(False)
+
+test_inconclusive
+    foreach
+        symptoms.inconclusive(True)
+    assert
+        symptoms.diagnosis("Test Inconclusive: medical exams needed to make a definitive diagnosis")
+
+
+
+
+
+
+
+

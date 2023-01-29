@@ -1,0 +1,124 @@
+#My Questions
+
+shortness_of_breath($ans)
+    Do you experience shortness of breath?
+    ---
+    $ans = yn
+
+fatigue($ans)
+    Do you experience fatigue?
+    ---
+    $ans = yn
+
+abdominal_swelling($ans)
+    Do you experience swelling in the abdomen area?
+    ---
+    $ans = yn
+
+leg_swelling($ans)
+    Do you experience swelling in the leg, ankle, feet or all of them?
+    ---
+    $ans = yn
+
+weight_gain($ans)
+    Do you experience a rapid gain of weight?
+    ---
+    $ans = yn
+
+chest_pain($ans)
+    Do you experience chest pain?
+    ---
+    $ans = yn
+
+coughing($ans)
+    Do you occasionally experience coughing with white or pink mucus?
+    ---
+    $ans = yn
+
+irregular_heartbeat($ans)
+    Do you experience irregular heartbeat?
+    ---
+    $ans = yn
+
+cholesterol($ans)
+    Are your blood cholesterol levels higher than average?
+    ---
+    $ans = yn
+
+Family_history($ans)
+    Does the coronary artery disease exist in you family history?
+    ---
+    $ans = yn
+
+highBloodPressure($ans)
+    Do you suffer from high blood pressure?
+    ---
+    $ans = yn
+
+smoking($ans)
+    Are you a smoker?
+    ---
+    $ans = yn
+
+heart_attack($ans)
+    Did you experience a heart attack before?
+    ---
+    $ans = yn
+
+upper_body($ans)
+    Do you feel pain or discomfort int the shoulders, arms, back, neck, jaw teeth or sometimes the upper belly?
+    ---
+    $ans = yn
+
+cold_sweat($ans)
+    Do you get cold sweats?
+    ---
+    $ans = yn
+
+indigestion($ans)
+    Do you suffer from heart burns or digestion often?
+    ---
+    $ans = yn
+
+fluttering($ans)
+    Do feel fluttering in your chest?
+    ---
+    $ans = yn
+
+racing($ans)
+    Do experience a racing heart beat?
+    ---
+    $ans = yn
+
+slow($ans)
+    Is your heart beat slower than normal?
+    ---
+    $ans = yn
+
+anxiety($ans)
+    Do you suffer from anxiety?
+    ---
+    $ans = yn
+
+faint($ans)
+    Do you experience fainting or near fainting sometimes?
+    ---
+    $ans = yn
+
+dizzy($ans)
+    Do you feel dizzy or lightheaded often?
+    ---
+    $ans = yn
+
+memory($ans)
+    Do you suffer from confusion or  memory problems?
+    ---
+    $ans = yn
+
+heart_murmur($ans)
+    Is a heart murmur (whooshing sound) heard when examined by a stethoscope?
+    ---
+    $ans = yn
+
+
+
